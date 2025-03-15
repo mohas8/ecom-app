@@ -19,6 +19,22 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
+              // Banner Image
+              Container(
+                height: 150,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.network(
+                    "https://img.pikbest.com/origin/10/01/82/867pIkbEsTAIq.png!w700wp",
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
               Row(
                 children: [
                   Text(
@@ -49,7 +65,7 @@ class Home extends StatelessWidget {
                             height: 120,
                             width: double.infinity,
                             child: Image.network(
-                              "https://gadgetnmusic.com/wp-content/uploads/2025/01/ACEFAST-L6-Wired-Earphones-with-Mic-1.png",
+                              "https://img.freepik.com/free-psd/3d-blue-headphones-isolated-transparent-background_191095-16409.jpg",
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -59,13 +75,13 @@ class Home extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "TMA-2 HD",
+                                  "TMA-2 HD Wireless",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 Text(
-                                  "1,500 TK",
+                                  "Rp. 1,500,000",
                                   style: TextStyle(
                                     color: Colors.black,
                                   ),
@@ -112,7 +128,7 @@ class Home extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  "2,500 TK",
+                                  "Rp. 1,500,000",
                                   style: TextStyle(
                                     color: Colors.black,
                                   ),
