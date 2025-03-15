@@ -29,7 +29,7 @@ class FAppBar extends StatelessWidget implements PreferredSizeWidget {
         style: TextStyle(
           fontFamily: "DMSans",
           fontWeight: FontWeight.w700,
-          color: const Color.fromARGB(255, 0, 117, 252),
+          color: FColors.oceanBlue,
         ),
       ),
       actions: [
